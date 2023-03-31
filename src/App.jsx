@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Blogs></Blogs>
-      {/* <ToastContainer></ToastContainer> */}
+      <ToastContainer></ToastContainer>
       
     </div>
   )
