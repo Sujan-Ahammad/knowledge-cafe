@@ -1,0 +1,69 @@
+.blog-card {
+    width: 845px;
+    height: 643px;
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.blog-card img {
+    width: 845px;
+    height: 450px;
+    border-radius: 10px;
+
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.name {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+
+.author-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.author-name p {
+    margin: 0;
+    margin-left: 13px;
+}
+
+.title {
+    font-family: 'Exo 2';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 35px;
+    color: #111111;
+    margin-top: 15px;
+    margin-bottom: 0;
+    /* line-height: 160%; */
+}
+.read{
+    display: flex;
+    align-items: center;
+}
+.read p{
+    margin-right: 15px;
+    font-size: 20px;
+}
+.book-icon{
+    font-size: 30px;
+}

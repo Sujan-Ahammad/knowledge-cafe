@@ -1,0 +1,39 @@
+
+.bookmarked{
+    width: 100%;
+height: 1552px;
+/* border: 1px solid gray; */
+
+background: rgba(128, 128, 128, 0.199);
+
+}
+.bookmark h3 {
+    text-align: center;
+}
+
+/* .bookmarked-title {
+    font-style: bold;
+    font-weight: 800;
+    font-size: 24px;
+    color: #111111;
+    border: 1px solid slategrey;
+} */
+
+.bookmark h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.bookmark span {
+    margin-left: 20px;
+}
+
+.read-time, .marked-length {
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: greenyellow;
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+}

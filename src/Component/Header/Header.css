@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: #345572;
+    height: 90px;
+}
+.header-logo{
+    color: whitesmoke;
+}
+.header-nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 25px;
+    font-size: 25px;
+}
