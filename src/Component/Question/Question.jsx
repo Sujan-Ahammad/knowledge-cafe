@@ -26,7 +26,7 @@ const Question = () => {
                 </h4>
             </div>
             <div>
-                <h2>Question 4 : What does React actually do? </h2>
+                <h2>Question 4 : How Does React Works </h2>
                 <h4><ul><li>Answer: The React. js framework is an open-source JavaScript framework and library developed by Facebook. It's used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript</li></ul></h4>
             </div>
         </div>
