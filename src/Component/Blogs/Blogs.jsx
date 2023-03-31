@@ -64,13 +64,13 @@ const Blogs = () => {
                 }
 
             </div>
-            {/* <div className="blogs-cart">
+            <div className="blogs-cart">
                 <BookMark
                     readTime={oldReadTime}
                     bookTitle={bookTitle}
                 ></BookMark>
 
-            </div> */}
+            </div>
             <Question></Question>
 
         </div>
