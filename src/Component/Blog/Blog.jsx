@@ -22,9 +22,9 @@ const Blog = (props) => {
                 </div>
                 <div className='read'>
                     <p>{time} min read</p>
-                    {/* <p>
+                    <p>
                     <  FontAwesomeIcon onClick={()=>BookMarkRead(props.blog)} className='book-icon' icon={faBookmark} />
-                   </p> */}
+                   </p>
     
                 </div>
             </div>
