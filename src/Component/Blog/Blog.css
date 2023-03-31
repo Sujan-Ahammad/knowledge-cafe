@@ -1,7 +1,6 @@
 .blog-card {
     width: 845px;
     height: 643px;
-    border: 2px solid green;
     border-radius: 8px;
     padding: 5px;
     margin-top: 10px;
@@ -54,7 +53,6 @@
     color: #111111;
     margin-top: 15px;
     margin-bottom: 0;
-    /* line-height: 160%; */
 }
 .read{
     display: flex;
@@ -66,4 +64,16 @@
 }
 .book-icon{
     font-size: 30px;
+    cursor: pointer;
+}
+.book-icon:hover{
+    color: green;
+}
+.title-mark-read a{
+    cursor: pointer;
+
+}
+.title-mark-read a:hover{
+    color: black;
+    font-size: 22px;
 }

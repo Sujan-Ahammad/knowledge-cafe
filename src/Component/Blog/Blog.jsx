@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Blog = (props) => {
-    const { title, name, date,time,cover } = props.blog
+    const { title, name, date,time,cover,authorImg } = props.blog
     const BookMarkRead = props.BookMarkRead;
     const markAsRead = props.markAsRead;
     return (
@@ -14,7 +14,7 @@ const Blog = (props) => {
             <img src={cover} alt="" />
             <div className='author'>
                 <div className='author-info'>
-                    <img src={cover} alt="" />
+                    <img src={authorImg} alt="" />
                     <div className='author-name'>
                         <p className='name'>{name} </p>
                         <p>{date}</p>
@@ -25,14 +25,14 @@ const Blog = (props) => {
                     <p >
                     <  FontAwesomeIcon onClick={()=>BookMarkRead(props.blog)} className='book-icon' icon={faBookmark} />
                    </p>
-                    
-                    {/* <button onClick={()=>BookMarkRead(props.blog)}>A</button> */}
-                    {/* <p onClick={()=>BookMarkRead(props.blog)}>Click</p> */}
+    
                 </div>
             </div>
+            <div className='title-mark-read'>
             <h2 className='title'>{title}</h2>
-            <p onClick={()=>markAsRead(props.blog)}>mark as read</p>
-            {/* <a onClick={()=>markAsRead(props.blog)} href="">mark as read</a> */}
+            <a onClick={()=>markAsRead(props.blog)} >mark as read</a>
+            </div>
+            
         </div>
     );
 };

@@ -1,15 +1,18 @@
-import { useState } from 'react'
+
 import './App.css'
 import Blogs from './Component/Blogs/Blogs'
 import Header from './Component/Header/Header'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <Header></Header>
       <Blogs></Blogs>
+      <ToastContainer></ToastContainer>
+      
     </div>
   )
 }

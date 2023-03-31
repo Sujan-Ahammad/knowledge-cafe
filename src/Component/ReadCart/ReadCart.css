@@ -1,0 +1,13 @@
+.book-cart{
+    /* border: 1px solid green; */
+    border-radius: 7px;
+    background: #ffffff75;
+    padding: 2px 15px;
+    margin-top: 15px;
+
+}
+.book-cart p{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 21px;
+}

@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './Blogs.css'
 import Blog from '../Blog/Blog';
 import BookMark from '../BookMark/BookMark';
+import Question from '../Question/Question';
+import { toast } from 'react-toastify';
+
 
 const Blogs = () => {
 
@@ -13,11 +16,11 @@ const Blogs = () => {
 
     },[])
 
+    // Reaed Time
     const [readTime, setReadTime] = useState('')
     const markAsRead = (blog) => {
         const newTime=[...readTime,blog]
         setReadTime(newTime)
-
     }
 
     let oldReadTime = 0;
@@ -26,19 +29,25 @@ const Blogs = () => {
     }
 
 
-
-
-
-
-    const [markedBlog,setMarkedBlog]=useState([])
-
-    const BookMarkRead = (blog) => {
-        const newMarkedBlog=[...markedBlog,blog]
-        setMarkedBlog(newMarkedBlog)
-
+    // Marked Titile Button
+    // const [bookTitle,setBookTitle]=useState([])
+    // const BookMarkRead = ( title) => {
+    //     const newBookTitle=[...bookTitle,title.title]
+    //     setBookTitle(newBookTitle)
+    // }
+    const [bookTitle,setBookTitle]=useState([])
+    const BookMarkRead = ( blog) => {
+        const exist = bookTitle.find(mark => mark.id !== blog.id);
+        if (!exist) {
+            const newBookTitle=[...bookTitle,blog.title]
+            setBookTitle(newBookTitle)
+        }
+        else {
+            const newBookMark=[...bookTitle,blog.title]
+            setBookTitle(newBookMark)
+          toast('Wow Jansu you got This Toast');
+        }
     }
-// console.log(oldTime);
-
 
     return (
         <div className='blogs-main'>
@@ -58,10 +67,11 @@ const Blogs = () => {
             <div className="blogs-cart">
                 <BookMark
                     readTime={oldReadTime}
-                    markedBlog={markedBlog}
+                    bookTitle={bookTitle}
                 ></BookMark>
 
             </div>
+            <Question></Question>
 
         </div>
     );

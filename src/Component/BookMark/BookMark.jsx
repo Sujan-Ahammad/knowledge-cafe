@@ -1,23 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import ReadCart from '../ReadCart/ReadCart';
 import './BookMark.css'
 
-const BookMark = ({ readTime, markedBlog }) => {
-
-    // useEffect(() => {
-        //     setReadBlog(markedBlog)
-        // }, [markedBlog])
-        // console.log(markedBlog);
-    console.log(markedBlog);
+const BookMark = ({ readTime, bookTitle }) => {
     return (
         <div className='bookmark'>
             <div>
             <h3 className='read-time'>Spent time on read: <span>{readTime} min</span></h3>
             </div>
             <div className='bookmarked'>
-            <h3 className='marked-length'>Bookmarked Blogs : { markedBlog.length}</h3>
-            <div className='bookmarked-title'>
-                <p>{ markedBlog.title}</p>
-            </div>
+            <h3 className='marked-length'>Bookmarked Blogs : { bookTitle.length}</h3>
+                <div className='bookmarked-title'>
+                    {
+                        bookTitle.map((title,index) => <ReadCart
+                        key={index}
+                        bookmarked={title}
+                        ></ReadCart>)
+                    }
+                </div>
             </div>
         </div>
     );
