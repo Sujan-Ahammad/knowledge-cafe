@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      {/* <Blogs></Blogs> */}
+      <Blogs></Blogs>
       {/* <ToastContainer></ToastContainer> */}
       
     </div>
