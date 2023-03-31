@@ -9,6 +9,10 @@
 }
 .header-logo{
     color: whitesmoke;
+    font-size: 35px;
+}
+.header-logo:hover{
+    color: rgb(9, 8, 10);
 }
 .header-nav{
     display: flex;
@@ -18,7 +22,7 @@ align-items: center;
     text-decoration: none;
     color: whitesmoke;
     margin-left: 25px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .header-nav img{
     width: 50px;
