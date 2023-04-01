@@ -4,7 +4,7 @@
     grid-gap: 20px;
     grid-template-columns: 3fr 2fr;
 } */
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 786px){
     .blogs-main {
         padding: 20px;
         display: grid;
