@@ -1,9 +1,10 @@
-/* .blogs-main {
-    padding: 20px;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 3fr 2fr;
-} */
+.blogs-main {
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    margin-left: 20px;
+
+}
 @media only screen and (min-width: 1080px){
     .blogs-main {
         padding: 20px;
