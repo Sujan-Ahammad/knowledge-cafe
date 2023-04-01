@@ -1,10 +1,4 @@
-.blogs-main {
-    padding: 30px;
-    text-align: center;
-    width: 100%;
-    margin-left: 20px;
 
-}
 @media only screen and (min-width: 1080px){
     .blogs-main {
         padding: 20px;
